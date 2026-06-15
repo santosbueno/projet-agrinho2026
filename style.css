@@ -1,0 +1,714 @@
+/* style.css */
+
+/* Variáveis de cor para facilitar ajustes do tema */
+:root {
+  --verde-oliva: #077e1b;
+  --verde-escuro: #4f5f2b;
+  --vinho: #1b4eac;
+  --bege: #c79227;
+  --azul-caixa: #304123;
+  --branco: #d8dcf0;
+}
+
+/* Reset básico para consistência entre navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Configuração global do corpo */
+body {
+  font-family: "Playfair Display", serif;
+  background: #000000;
+  color: var(--branco);
+  line-height: 1.5;
+}
+
+/* Container central para limitar largura de conteúdo */
+.conteiner {
+  width: min(1150px, 92%);
+  margin: 0 auto;
+}
+
+/* HERO */
+.topo {
+  background: var(--branco);
+  padding: 52px 0;
+}
+
+.topo-grade {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.topo-esquerda h1 {
+  font-family: "Cinzel", serif;
+  color: var(--vinho);
+  font-size: clamp(2.2rem, 7vw, 5.2rem);
+  line-height: 1.02;
+  margin-bottom: 26px;
+}
+
+.frase {
+  max-width: 320px;
+  color: var(--vinho);
+  border: 1px solid var(--vinho);
+  border-radius: 999px;
+  padding: 18px 20px;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.topo-direita img {
+  width: min(520px, 100%);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin-inline: auto;
+}
+
+/* BANNER PARANÁ */
+.banner-parana {
+  min-height: 58vh;
+  background: url("./assets/Fundo-1.png") center / cover no-repeat;
+}
+
+.sobreposicao {
+  background: linear-gradient(to right, rgba(0,0,0,.35), rgba(0,0,0,.2));
+  min-height: inherit;
+}
+
+.banner-conteudo {
+  min-height: 58vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.banner-conteudo h2 {
+  font-family: "Cinzel", serif;
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 400;
+}
+
+.banner-conteudo p {
+  max-width: 520px;
+  font-size: clamp(1rem, 2vw, 1.8rem);
+}
+
+/* FAIXA */
+.faixa-texto {
+  background: var(--verde-oliva);
+  text-align: center;
+  padding: 28px 0;
+}
+
+.faixa-texto p {
+  font-family: "Cinzel", serif;
+  font-size: clamp(1rem, 2vw, 1.8rem);
+}
+
+/* CARDS */
+.cartoes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cartao {
+  min-height: 340px;
+  display: grid;
+  place-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.cartao-1 { background-image: url("./assets/energia-solar-fotovoltaica-no-campo-facilita-pronaf\ \ \ 01.webp"); }
+.cartao-2 { background-image: url("./assets/30-Energia-solar-1\ \ 0002.jpg"); }
+.cartao-3 { background-image: url("./assets/sddefault\ \ 0003.jpg"); }
+
+.bolha {
+  width: min(230px, 90%);
+  padding: 18px;
+  border: 1px solid #fff;
+  border-radius: 999px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.35);
+  font-size: 1.15rem;
+}
+
+/* NOTÍCIAS */
+.noticias {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  background: var(--verde-escuro);
+}
+
+.noticias-esquerda {
+  position: relative;
+}
+
+.noticias-esquerda img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 480px;
+}
+
+.noticias-esquerda h3 {
+  position: absolute;
+  left: 8%;
+  bottom: 7%;
+  font-family: "Cinzel", serif;
+  font-size: clamp(2rem, 7vw, 5rem);
+  font-weight: 700;
+  line-height: 0.95;
+}
+
+.noticias-direita {
+  margin: 52px;
+  background: var(--azul-caixa);
+  padding: 32px;
+}
+
+.noticias-direita h4 {
+  font-family: "Cinzel", serif;
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  margin: 0 0 8px;
+  text-decoration: underline;
+}
+
+.gatilho-noticia {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.gatilho-noticia:hover {
+  opacity: 0.82;
+}
+
+.noticias-direita p {
+  margin: 0 0 24px;
+  font-size: 1.1rem;
+}
+
+/* FEIRA */
+.feira {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  background: var(--bege);
+}
+
+.feira-esquerda img {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  display: block;
+}
+
+.feira-esquerda p {
+  color: #fff;
+  text-align: center;
+  padding: 16px;
+  font-size: 1.15rem;
+}
+
+.feira-direita {
+  padding: 34px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(120px, 1fr));
+  gap: 28px;
+  align-content: center;
+  justify-items: center;
+}
+
+.feira-direita img {
+  width: min(230px, 100%);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* RESPONSIVIDADE: tablets */
+@media (max-width: 980px) {
+  .topo-grade,
+  .banner-conteudo,
+  .noticias,
+  .feira {
+    grid-template-columns: 1fr;
+  }
+
+  .banner-conteudo {
+    padding: 42px 0;
+    align-items: flex-start;
+    min-height: auto;
+  }
+
+  .cartoes {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .noticias-direita {
+    margin: 0;
+  }
+
+  .quiz-conteiner {
+    grid-template-columns: 1fr;
+  }
+
+  .chamada-quiz-conteiner {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* RESPONSIVIDADE: celulares */
+@media (max-width: 640px) {
+  .topo {
+    padding: 28px 0;
+  }
+
+  .frase {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .cartoes {
+    grid-template-columns: 1fr;
+  }
+
+  .cartao {
+    min-height: 290px;
+  }
+
+  .feira-direita {
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    padding: 20px;
+  }
+
+  .noticias-direita {
+    padding: 22px;
+  }
+
+  .transcricao-video {
+    display: none;
+  }
+
+  .formulario-quiz {
+    padding: 18px;
+  }
+
+  .modal-quiz-conteudo {
+    padding: 16px;
+  }
+
+  .opcoes-quiz {
+    grid-template-columns: 1fr;
+  }
+
+  .opcao-quiz {
+    aspect-ratio: auto;
+  }
+}
+
+/* POPUP DE VIDEO */
+.bolha.gatilho-video {
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.bolha.gatilho-video:hover {
+  transform: scale(1.04);
+  background: rgba(0, 0, 0, 0.52);
+}
+
+.modal-video {
+  position: fixed;
+  inset: 0;
+  display: none;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 20px;
+  z-index: 999;
+}
+
+.modal-video.ativo {
+  display: grid;
+}
+
+.modal-video-conteudo {
+  position: relative;
+  width: min(920px, 94vw);
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-video-conteudo iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  display: block;
+}
+
+.transcricao-video {
+  padding: 16px;
+  background: #f4f1e8;
+  color: #222;
+  overflow-y: auto;
+  max-height: 32vh;
+}
+
+.transcricao-video h4 {
+  font-family: "Cinzel", serif;
+  font-size: 1.2rem;
+  margin: 0 0 8px;
+}
+
+.transcricao-video p {
+  margin: 0;
+  line-height: 1.55;
+}
+
+.modal-video-fechar {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  color: #222;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+body.modal-aberto {
+  overflow: hidden;
+}
+
+/* POPUP DE NOTICIA */
+.modal-noticia {
+  position: fixed;
+  inset: 0;
+  display: none;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 20px;
+  z-index: 1000;
+}
+
+.modal-noticia.ativo {
+  display: grid;
+}
+
+.modal-noticia-conteudo {
+  position: relative;
+  width: min(760px, 94vw);
+  background: #f4f1e8;
+  color: #2c2c2c;
+  border-radius: 12px;
+  padding: 18px 18px 22px;
+}
+
+.modal-noticia-conteudo img {
+  width: 100%;
+  height: auto;
+  max-height: 52vh;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  background: #ddd;
+  display: block;
+}
+
+.modal-noticia-conteudo h4 {
+  font-family: "Cinzel", serif;
+  color: #2c2c2c;
+  font-size: clamp(1.1rem, 2.4vw, 1.7rem);
+  margin: 0 0 14px;
+}
+
+.botao-ler-noticia {
+  border: 0;
+  border-radius: 999px;
+  padding: 12px 20px;
+  background: var(--verde-escuro);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.acoes-noticia {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.botao-link-noticia {
+  border: 0;
+  border-radius: 999px;
+  padding: 12px 20px;
+  background: var(--vinho);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.modal-noticia-fechar {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* QUIZ */
+.quiz {
+  background: transparent;
+  color: #2c2c2c;
+  padding: 0;
+}
+
+.quiz-conteiner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.quiz-introducao h2 {
+  font-family: "Cinzel", serif;
+  font-size: clamp(1.6rem, 3.4vw, 2.8rem);
+  color: var(--vinho);
+  margin-bottom: 12px;
+}
+
+.quiz-introducao p {
+  font-size: 1.05rem;
+  max-width: 360px;
+}
+
+.formulario-quiz {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 22px 22px 26px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  background-image: radial-gradient(circle at top, rgba(127, 141, 61, 0.1), transparent 60%);
+}
+
+.progresso-quiz {
+  font-family: "Cinzel", serif;
+  color: var(--vinho);
+  font-size: 1.1rem;
+  text-align: right;
+}
+
+.etapas-quiz {
+  margin-top: 12px;
+}
+
+.etapa-quiz {
+  display: none;
+  gap: 14px;
+}
+
+.etapa-quiz.ativo {
+  display: grid;
+}
+
+.titulo-pergunta-quiz {
+  font-family: "Cinzel", serif;
+  font-size: clamp(1.25rem, 2.6vw, 1.7rem);
+  color: #1f1f1f;
+}
+
+.opcoes-quiz {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.opcao-quiz {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: #f7f3e6;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+  aspect-ratio: 1 / 1;
+  font-size: 1.08rem;
+}
+
+.opcao-quiz input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.opcao-quiz:hover {
+  background: rgba(127, 141, 61, 0.12);
+  transform: translateY(-2px);
+}
+
+.opcao-quiz.selecionado {
+  border-color: var(--verde-escuro);
+  background: rgba(127, 141, 61, 0.25);
+}
+
+.botao-proximo-quiz {
+  justify-self: end;
+  border: 0;
+  border-radius: 999px;
+  padding: 12px 24px;
+  font-size: 1.05rem;
+  cursor: pointer;
+  background: var(--verde-escuro);
+  color: #fff;
+}
+
+.botao-proximo-quiz:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.acoes-quiz {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.acoes-quiz.oculto {
+  display: none;
+}
+
+.botao-reiniciar-quiz {
+  border: 0;
+  border-radius: 999px;
+  padding: 12px 20px;
+  font-size: 1.05rem;
+  cursor: pointer;
+  background: var(--vinho);
+  color: #fff;
+}
+
+.resultado-quiz {
+  margin-top: 16px;
+  font-size: 1.15rem;
+  color: #1f1f1f;
+}
+
+.formulario-quiz.finalizado .etapas-quiz {
+  display: none;
+}
+
+.formulario-quiz.finalizado .progresso-quiz {
+  opacity: 0.7;
+}
+
+/* CTA QUIZ */
+.chamada-quiz {
+  background: var(--verde-oliva);
+  padding: 34px 0 44px;
+}
+
+.chamada-quiz-conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  color: var(--vinho);
+}
+
+.chamada-quiz-conteiner h3 {
+  font-family: "Cinzel", serif;
+  font-size: clamp(1.4rem, 3vw, 2.4rem);
+}
+
+.botao-abrir-quiz {
+  border: 0;
+  border-radius: 999px;
+  padding: 14px 26px;
+  font-size: 1.05rem;
+  background: var(--vinho);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 0 0 rgba(90, 2, 47, 0.45);
+  animation: pulsoQuiz 1.6s ease-in-out infinite;
+}
+
+@keyframes pulsoQuiz {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(90, 2, 47, 0.45); }
+  50% { transform: scale(1.05); box-shadow: 0 0 0 16px rgba(90, 2, 47, 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(90, 2, 47, 0); }
+}
+
+/* MODAL QUIZ */
+.modal-quiz {
+  position: fixed;
+  inset: 0;
+  display: none;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 20px;
+  z-index: 1001;
+}
+
+.modal-quiz.ativo {
+  display: grid;
+}
+
+.modal-quiz-conteudo {
+  position: relative;
+  width: min(980px, 96vw);
+  background: #f4f1e8;
+  color: #2c2c2c;
+  border-radius: 16px;
+  padding: 22px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-quiz-fechar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* Acessibilidade: foco visível para navegação por teclado */

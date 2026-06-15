@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agrinho - Estrutura Base</title>
+
+  <!-- Fontes (opcional) -->
+   <link rel="preconnect" href="https://fonts.googleapis.com" /> 
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> 
+   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet" /> 
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- SECAO 1: TOPO (titulo + imagem) -->
+  <header class="topo">
+    <div class="conteiner topo-grade">
+      <div class="topo-esquerda">
+        <h1>O Agrinho<br>2026</h1>
+        <p class="frase">
+           "Como a energia solar ajuda as fazendas a produzir mais gastando menos energia e preservando o meio ambiente."
+        </p>
+      </div>
+      <div class="topo-direita">
+        <!-- Coloque sua imagem aqui -->
+        <img src="./assets/logo-agrinho.jpg" alt="Logo ou imagem principal">
+      </div>
+    </div>
+  </header>
+
+  <!-- SECAO 2: BANNER COM IMAGEM DE FUNDO -->
+  <section class="banner">
+    <div class="sobreposicao">
+      <div class="conteiner banner-conteudo">
+        <h2>“Energia Solar no Campo”</h2>
+        <p>A energia solar ajuda os agricultores a economizar dinheiro e proteger a natureza usando a luz do sol para gerar eletricidade..</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECAO 3: FAIXA DE TEXTO -->
+  <section class="faixa-texto">
+    <div class="conteiner">
+Muitas propriedades rurais gastam grande quantidade de energia elétrica e água. A energia solar surge como alternativa sustentável, pois utiliza a luz do sol para gerar eletricidade sem causar poluição.
+ Pois é possível criar sistemas inteligentes que automatizam tarefas agrícolas, ajudam o produtor rural.    </div>
+  </section>
+
+  <!-- SECAO 4: CARTOES COM IMAGENS -->
+  <section class="cartoes">
+    <!-- CARTAO 1 -->
+    <article class="cartao cartao-1">
+      <div class="bolha gatilho-video" data-id-video="ENERGIA" data-url-video="https://www.youtube.com/watch?v=xVObrFq_SV8&t=41s"  > Projeto Incentiva Agricultores a Investir em Energia Solar Fotovoltaica</div>
+    </article>
+    <!-- CARTAO 2 -->
+    <article class="cartao cartao-2">
+      <div class="bolha gatilho-video" data-id-video="sustentavel" data-url-video="https://www.youtube.com/watch?v=rDAmwZ5PMmk">O que é energia solar</div>
+    </article>
+    <!-- CARTAO 3 -->
+    <article class="cartao cartao-3">
+      <div class="bolha gatilho-video" data-id-video="funciomamento" data-url-video="https://www.youtube.com/watch?v=ekxYqw220rA"> como funciona a energia solar</div>
+    </article>
+  </section>
+
+  <!-- SECAO 5: NOTICIAS -->
+  <section class="noticias">
+    <div class="noticias-esquerda">
+      <!-- Imagem grande da secao -->
+      <img src="./assets/Quais-os-beneficios-da-energia-solar-para-o-meio-ambiente 000.png" alt="Imagem da secao de noticias">
+      <h3>ENERGIA SOLAR</h3>
+    </div>
+    <aside class="noticias-direita">
+      <!-- Noticia 1 -->
+
+      <h4>
+        <button 
+        type="button" 
+        class="gatilho-noticia"
+        data-id-noticia="teste1"
+        data-titulo-noticia="Somente um teste"
+        data-imagem-notica="./assets/logo-agrinho.jpg"
+        data-url-noticia="https://www.portalsolar.com.br/energia-solar-fotovoltaica-no-parana"
+        >
+          A energia solar no Paraná
+        </button>
+      </h4>
+      <p>A energia solar no Paraná cresce por ser uma fonte limpa, sustentável e capaz de reduzir os gastos com eletricidade.           </p>
+
+
+      <!-- Noticia 2 -->
+       
+
+      <h4>
+        <button 
+        type="button" 
+        class="gatilho-noticia"
+        data-id-noticia="teste2"
+        data-titulo-noticia="Somente um teste 2"
+        data-imagem-notica="./assets/meio-ambiente.jpg"
+        data-url-noticia="https://canalsolar.com.br/brasil-estados-mais-de-um-gw-energia-solar-distribuida/"
+        >
+         Brasil já tem 16 estados com mais de 1 GW em energia solar distribuída
+
+        </button>
+      </h4>
+      <p>O Paraná está entre os estados brasileiros com maior geração de energia solar distribuída, entre os 16 estados</p>
+      <!-- Noticia 3 -->
+     
+
+      <h4>
+        <button 
+        type="button" 
+        class="gatilho-noticia"
+        data-id-noticia="conselho"
+        data-titulo-noticia="Somente um teste"
+        data-imagem-noticia="./assets/logo-agrinho.jpg"
+        data-url-noticia="https://www.portalsolar.com.br/noticias/mercado/internacional/energia-solar-supera-600-gw-de-capacidade-adicionada-no-mundo-em-2025"
+        >
+        Energia solar supera 600 GW de capacidade adicionada no mundo em 2025
+        </button>
+      </h4>
+      <p>Em 2025, a energia solar cresceu muito no mundo, com recorde de novas instalações e destaque na geração de energia limpa.</p>
+  
+    </aside>
+  </section>
+
+  <!-- SECAO 6: FEIRA + GALERIA -->
+  <section class="feira">
+    <div class="feira-esquerda">
+      <img src="./assets/post_energia_solar.webp" alt="Imagem da feira">
+      <p>energia solar.</p>
+    </div>
+    <div class="feira-direita">
+      <img src="./assets/Placa-Solar-1280x720   1220.webp" alt="Imagem 1">
+      <img src="./assets/Screenshot_12.jpg" alt="Imagem 2">
+      <img src="./assets/agrovolt-coreia-alemanha.jpg" alt="Imagem 3">
+      <img src="./assets/8bd7b5da-thumb-blog-tendencias-de-tecnologia-nas-pesquisas-em-sustentabilidade-e-energia-renovavel.jpg" alt="Imagem 4">
+    </div>
+  </section>
+
+  <!-- SECAO FINAL: CHAMADA PARA ACAO (opcional) -->
+  <section class="chamada-final">
+    <div class="conteiner chamada-final-conteiner">
+      <h3>Chamada final do projeto</h3>
+      <button type="button" class="botao-chamada-final">Acessar</button>
+    </div>
+  </section>
+
+  <!-- MODAIS (opcional) -->
+  <!-- Modal de video -->
+     <div class="modal-video" id="modal-video" aria-hidden="true">
+    <div class="modal-video-conteudo" role="dialog" aria-modal="true" aria-label="Vídeo">
+      <button class="modal-video-fechar" id="fechar-modal-video" type="button" aria-label="Fechar vídeo">×</button>
+      <iframe
+        id="frame-video"
+        src=""
+        title="Vídeo do Paraná"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <div class="transcricao-video">
+        <h4>Transcrição do vídeo</h4>
+        <p id="texto-transcricao-video">Selecione um vídeo para ver a transcrição.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de noticias -->
+
+<div class="modal-noticia" id="modal-noticia" aria-hidden="true">
+    <div class="modal-noticia-conteudo" role="dialog" aria-modal="true" aria-label="Notícia">
+      <button class="modal-noticia-fechar" id="fechar-modal-noticia" type="button" aria-label="Fechar notícia">×</button>
+      <img id="imagem-modal-noticia" src="" alt="" />
+      <h4 id="titulo-modal-noticia"></h4>
+      <div class="acoes-noticia">
+        <button class="botao-ler-noticia" id="botao-ler-noticia" type="button">Ler notícia</button>
+        <button class="botao-link-noticia" id="botao-link-noticia" type="button">Ir para notícia</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de quiz -->
+ <div class="modal-quiz" id="modal-quiz" aria-hidden="true">
+    <div class="modal-quiz-conteudo" role="dialog" aria-modal="true" aria-label="Mini quiz">
+      <button class="modal-quiz-fechar" id="fechar-modal-quiz" type="button" aria-label="Fechar quiz">×</button>
+
+      <div class="quiz" id="mini-quiz">
+        <div class="quiz-conteiner">
+          <div class="quiz-introducao">
+            <h2>Mini Quiz do Agrinho</h2>
+            <p>
+              Teste seus conhecimentos sobre o agronegócio sustentável do Paraná. São 5 perguntas rápidas.
+            </p>
+          </div>
+
+          <form class="formulario-quiz" id="formulario-quiz">
+            <div class="progresso-quiz">
+              <span id="passo-quiz">1</span>/<span id="total-quiz">5</span>
+            </div>
+
+            <div class="etapas-quiz">
+              <div class="etapa-quiz ativo" data-step="1">
+                <h3 class="titulo-pergunta-quiz">1)Qual é a principal fonte de energia utilizada pela energia solar?</h3>
+                <div class="opcoes-quiz">
+                  <label class="opcao-quiz">
+                    <input type="radio" name="q1" value="a" />  Vento
+                  </label>
+                  <label class="opcao-quiz" data-correta="true">
+                    <input type="radio" name="q1" value="b" /> Luz do sol
+                  </label>
+                  <label class="opcao-quiz">
+                    <input type="radio" name="q1" value="c" /> Água
+                  </label>
+                </div>
+                <button class="botao-proximo-quiz" type="button" disabled>Próximo</button>
+              </div>
+
+              <div class="etapa-quiz" data-step="2">
+                <h3 class="titulo-pergunta-quiz">2) Qual é uma das vantagens da energia solar para as fazendas?</h3>
+                <div class="opcoes-quiz">
+                  <label class="opcao-quiz" data-correta="true">
+                    <input type="radio" name="q2" value="a" /> Aumenta a poluição
+                  </label>
+                  <label class="opcao-quiz">
+                    <input type="radio" name="q2" value="b" /> Gasta mais energia elétrica
+                  </label>
+                  <label class="opcao-quiz">
+                    <input type="radio" name="q2" value="c" /> Reduz os custos com eletricidade
+                  </label>
+                </div>
+                <button class="botao-proximo-quiz" type="button" disabled>Próximo</button>
+              </div>
+
+              <div class="etapa-quiz" data-step="3">
+                <h3 class="titulo-pergunta-quiz">3)A energia solar é considerada uma energia:</h3>
+                <div class="opcoes-quiz">
+                  <label class="opcao-quiz" data-correta="true">
+                    <input type="radio" name="q3" value="a" /> Limpa e renováve
+                  </label>
+                  <label class="opcao-quiz">
+                    <input type="radio" name="q3" value="b" /> Poluente
+                  </label>
+                  <label class="opcao-quiz">
+                    <input type="radio" name="q3" value="c" /> Não renovável
+                  </label>
+                </div>
+                <button class="botao-proximo-quiz" type="button" disabled>Próximo</button>
+              </div>
+
+              <div class="etapa-quiz" data-step="4">
+                <h3 class="titulo-pergunta-quiz">4) O que a energia solar ajuda a preservar?</h3>
+                <div class="opcoes-quiz">
+                  <label class="opcao-quiz">
+                    <input type="radio" name="q4" value="a" /> O meio ambiente
+                  </label>
+                  <label class="opcao-quiz" data-correta="true">
+                    <input type="radio" name="q4" value="b" /> Os combustíveis fósseis
+                  </label>
+                  <label class="opcao-quiz">
+                    <input type="radio" name="q4" value="c" /> A poluição
+                  </label>
+                </div>
+                <button class="botao-proximo-quiz" type="button" disabled>Próximo</button>
+              </div>
+
+              <div class="etapa-quiz" data-step="5">
+                <h3 class="titulo-pergunta-quiz">5)Por que muitos agricultores estão investindo em energia solar?</h3>
+                <div class="opcoes-quiz">
+                  <label class="opcao-quiz">
+                    <input type="radio" name="q5" value="a" /> Porque ela é mais cara
+                  </label>
+                  <label class="opcao-quiz" data-correta="true">
+                    <input type="radio" name="q5" value="b" /> Porque ajuda a economizar dinheiro
+                  </label>
+                  <label class="opcao-quiz">
+                    <input type="radio" name="q5" value="c" /> Porque precisa de combustível
+                  </label>
+                </div>
+                <button class="botao-proximo-quiz" type="button" disabled>Finalizar</button>
+              </div>
+            </div>
+
+            <div class="resultado-quiz" id="resultado-quiz" aria-live="polite"></div>
+            <div class="acoes-quiz oculto" id="acoes-quiz">
+              <button class="botao-reiniciar-quiz" type="button" id="botao-reiniciar-quiz">Reiniciar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- JS (opcional)d -->
+  <script src="script-video.js"></script>
+ <script src="script-noticias.js"></script> 
+ <script src="script-quiz.js"aaaaa></script> 
+</body>
+</html>
